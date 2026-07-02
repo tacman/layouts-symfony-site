@@ -8,7 +8,7 @@ doctrine:
 
         profiling_collect_backtrace: '%kernel.debug%'
 
-        schema_filter: ~^(?!nglayouts_)~
+        schema_filter: ~^(?!nglayouts_|_timescaledb|timescaledb_|toolkit_experimental)~
     orm:
         validate_xml_mapping: true
         naming_strategy: doctrine.orm.naming_strategy.underscore
