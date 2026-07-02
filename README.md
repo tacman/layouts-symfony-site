@@ -76,6 +76,12 @@ Skeleton Symfony 8.1 project bootstrapped with [Netgen Layouts](https://docs.net
 
   Use the admin panel to create a Layout, then add a Rule (under Mappings) that maps a path/route to that Layout — that's what makes content show up on the frontend.
 
+- Layout editing app (drag-and-drop block/zone editor for a specific layout, opened from the admin panel's Layouts list): `http://127.0.0.1:8000/nglayouts/app`, or with the Symfony CLI:
+
+  ```bash
+  symfony open:local --path=/nglayouts/app
+  ```
+
 - Mailpit (catches outgoing mail): find its web UI port with `docker compose port mailer 8025`, then open `http://127.0.0.1:<PORT>`.
 
 ## Notes
